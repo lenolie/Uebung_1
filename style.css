@@ -46,4 +46,20 @@ main {
 #bild {
     float: right;
 }
-
+#ergebnis {
+    float: right;
+    width: 200px;
+    height: 200px;
+}
+#rechner {
+        width: 80%;
+        margin: auto;
+        border: solid thin black;
+}
+#logbuch {
+    float: left;
+    width: 80%;
+    margin: auto;
+    padding: 5%;
+    border: solid thin black;
+     }
