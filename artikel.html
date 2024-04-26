@@ -16,12 +16,45 @@
         <main>
             Artikel
             BMI Rechner
-            Log-Buch
+    
+            <div id="logbuch">
+                <h2>Logbuch</h2>
+                <h3>Mahlzeit tracken</h3>
+        
+                <form name="mtracken">
+                    Name: <input type="text" id="name">
+        
+                    <label>Typ:
+                        <select id="typ">
+                            <option value="">Bitte wählen:</option>
+                            <option value="mahlzeit">Mahlzeit</option>
+                            <option value="süßes">Süßes</option>
+                            <option value="obst">Obst</option>
+                        </select>
+                    </label>
+                    Mase:<input type="number" id="eingabe1" placeholder="">
+                    <input type="button" value="Save" id="button" onclick="ausgabe()"><br>
+           
+        
+            <form id="logbuch">
+        
+            <p><span>Überblick:</span> <br></br>
+                <time aria-current="date" id="zeit"></time>
+                ..</output>..</p>
+            <p><span>Bewertung:</span> <br></br><output id="bewertung" for="typ"></output> Sie haben viel Obst gegessen!</p>
+        
+        </form>
         </main>
 
         <footer>
             <a href="impressum.html">Impressum</a>
         </footer>
     </div>
+    <script>
+            function ausgabe() {
+                document.getElementById("ausgabefeld").innerHTML = eingabe;
+              }
+        
+              </script>
 </body>
 </html>
