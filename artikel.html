@@ -24,14 +24,14 @@
 
 
         <div id="rechner">
-            <input readonly id="ergebnis">
             <h2>BMI-Rechner</h2>
             <!--BMI = Körpergewicht in kg : Körpergröße in m im Quadrat-->
         
             Alter: <input type="number" id="alter"><br><br>
             Körpergewicht in kg:<input type="number" id="kg"><br><br>
             Körpergröße in m:<input type="number" id="m"> <br><br>
-            <button id="berechnen">Berechnen</button> <br>
+            <button id="berechnen">Berechnen</button> <br><br>
+            <input readonly id="ergebnis">
         </div>
     
             <div id="logbuch">
@@ -73,5 +73,16 @@
               }
         
               </script>
+    <script>
+
+        let m2 = parseFloat(document.getElementById("m").value) * parseFloat(document.getElementById("m").value)
+    
+        document.getElementById("berechnen").onclick = function() {
+            ergebnis = parseFloat(document.getElementById("kg").value) / 
+                        m2
+    
+                        document.getElementById("ergebnis").value = ergebnis;
+        }
+    </script>
 </body>
 </html>
